@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 
-const questions = (answers=[]) => {
+const questions = (answers = [{}]) => {
     inquirer
         .prompt([
             {
@@ -10,7 +10,6 @@ const questions = (answers=[]) => {
                 name: 'employee-type'
             }
         ]);
-        
     return answers;
 };
 
