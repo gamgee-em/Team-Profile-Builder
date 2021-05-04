@@ -6,8 +6,8 @@
     };
 }; */
 
-(employee = () => {
+const employee = () => {
     return {};
-})();
+};
 
 module.exports = employee;
