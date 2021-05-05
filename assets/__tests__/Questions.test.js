@@ -1,4 +1,4 @@
-const questions = require('../scripts/questions');
+const questions = require('../scripts/lib/Questions');
 
 test('returns an ARR of OBJ', () => {
     expect(questions()).toEqual([{}]);

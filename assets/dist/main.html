@@ -6,25 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="container bg-info text-center">
-      <h1 class="h1">My Team</h1>
+    <header class="container bg-info pt-3" style="height: 15vh;">
+      <h1 class="d-flex justify-content-center">My Team</h1>
     </header>
-    <div class="container p-2">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4 card thumbnail">
-                <div class="card">
+            <div class="col-sm-4 card">
+                <div class="card-body">
                     <div class="text-center">
-                        <h3 class="text-center">Engineer</h3>
-                        <img class="" src="./images/dev-icon.png" alt="icon representing type of employee">
+                        <h3 id='employee-type' class="text-center">Enginer</h3>
+                        <img class="" src="../images/dev-icon.png" alt="icon representing type of employee">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title text-center ">Sam Sweigart</h5>
@@ -36,11 +31,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4 card thumbnail">
-                <div class="card">
+            <div class="col-sm-4 card">
+                <div class="card-body">
                     <div class="text-center">
                         <h3 class="text-center">Engineer</h3>
-                        <img class="" src="./images/dev-icon.png" alt="icon representing type of employee">
+                        <img class="" src="../images/dev-icon.png" alt="icon representing type of employee">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title text-center ">Sam Sweigart</h5>
@@ -52,11 +47,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4 card thumbnail">
-                <div class="card">
+            <div class="col-sm-4 card">
+                <div class="card-body">
                     <div class="text-center">
                         <h3 class="text-center">Engineer</h3>
-                        <img class="" src="./images/dev-icon.png" alt="icon representing type of employee">
+                        <img class="" src="../images/dev-icon.png" alt="icon representing type of employee">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title text-center ">Sam Sweigart</h5>
@@ -68,11 +63,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4 card thumbnail">
-                <div class="card">
+            <div class="col-sm-4 card">
+                <div class="card-body">
                     <div class="text-center">
                         <h3 class="text-center">Engineer</h3>
-                        <img class="" src="./images/dev-icon.png" alt="icon representing type of employee">
+                        <img class="" src="../images/dev-icon.png" alt="icon representing type of employee">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title text-center ">Sam Sweigart</h5>
@@ -86,5 +81,6 @@
             </div>
       </div>
     </div>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>

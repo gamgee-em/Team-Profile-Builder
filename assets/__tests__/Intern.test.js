@@ -1,4 +1,4 @@
-const intern = require('../scripts/intern');
+const intern = require('../scripts/lib/Intern');
 
 test('returns an OBJECT', () => {
     expect(intern()).toEqual({});

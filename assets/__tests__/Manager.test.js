@@ -1,4 +1,4 @@
-const manager = require('../scripts/manager');
+const manager = require('../scripts/lib/Manager');
 
 test('returns an OBJECT', () => {
     expect(manager()).toEqual({});

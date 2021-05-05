@@ -1,5 +1,5 @@
 //import employee from 'employee';
-const { Employee, employee }= require('../scripts/employee')
+const { Employee, employee }= require('../scripts/lib/Employee');
 
 test('Employee class has a constructor', () => {
     expect(Employee).hasOwnProperty(constructor)
