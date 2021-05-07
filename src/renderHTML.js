@@ -1,5 +1,6 @@
 const fs = require('fs');
 const htmlSkel = require('../lib/html-skel');
+const { renderIntern } = require('../lib/intern');
 /* const employee = require('../lib/employee');
 const engineer = require('../lib/engineer');
 const intern = require('../lib/intern');
@@ -11,7 +12,7 @@ const { type } = require('os'); */
 const renderTeamMember = member_type => {
     // TODO: create function to render card for type of member choosen
     // TODO: and pass into ternary
-    
+    renderIntern();
 };
 
 const renderManager = answers => {
