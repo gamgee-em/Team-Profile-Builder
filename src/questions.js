@@ -28,7 +28,7 @@ module.exports = questions = [
 ];
 /* 
 {
-    name: 'manager_github',
+    name: 'engineer_github',
     type: 'input',
-    message: 'What is the team manager\'s github username?'
+    message: 'What is the team engineer\'s github username?'
 }, */
