@@ -18,7 +18,10 @@ const managerQuestions = [
         name: 'manager_office',
         type: 'input',
         message: 'What is the team manager\'s office #?'
-    },
+    }
+];
+
+const teamMemberQuestion = [
     {
         name: 'member_type',
         type: 'list',
@@ -47,12 +50,6 @@ const engineerQuestions = [
         name: 'engineer_github',
         type: 'input',
         message: 'What is the engineer\'s GitHub username?'
-    },
-    {
-        name: 'member_type',
-        type: 'list',
-        message: 'What type of team member would you like to add?',
-        choices: ['Engineer', 'Intern', 'My Team is complete for now']
     }
 ];
 
@@ -76,24 +73,12 @@ const internQuestions = [
         name: 'intern_school',
         type: 'input',
         message: 'Where did this Intern go to school?'
-    },
-    {
-        name: 'member_type',
-        type: 'list',
-        message: 'What type of team member would you like to add?',
-        choices: ['Engineer', 'Intern', 'My Team is complete for now']
     }
 ];
 
 module.exports = {
     managerQuestions,
+    teamMemberQuestion,
     engineerQuestions,
     internQuestions
 };
-
-/* switch(member_type) {
-    case 'Engineer':
-        console.log('engineer');
-    case 'Intern':
-        console.log('intern');
-} */
