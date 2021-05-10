@@ -12,12 +12,12 @@ const htmlHead = `<!DOCTYPE html>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
     </head>
-<body>
-    <header class="container bg-info pt-3" style="height: 15vh;">
-        <h1 class="d-flex justify-content-center">My Team</h1>
+<body class="m-4 bg-light">
+    <header class="container bg-info pt-4 rounded shadow-lg" style="height: 15vh;">
+        <h1 class="d-flex justify-content-center" style="text-shadow: 2px 2px 3px rgba(83, 78, 78, 0.766);">My Team</h1>
     </header>
-    <div class="container">
-        <div id='main' class="row">`;
+    <div class="container card rounded shadow-lg mt-1">
+        <div id='main' class="row justify-content-center">`;
 
 const htmlFooter = `</div>
                 </div>
@@ -27,7 +27,7 @@ const htmlFooter = `</div>
         </html>`;
 
 const managerHTML = (member) => {
-    return `<div class="col-sm-4 card">
+    return `<div class="col-sm-3 card rounded m-4 shadow bg-light">
                 <div class="card-body">
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
@@ -38,16 +38,16 @@ const managerHTML = (member) => {
                         <h4 id='manager-name' class="card-title text-center ">${member.getName()}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li id='manager-id' class="list-group-item">Employee Id: ${member.getId()}</li>
-                        <li id='manager-office' class="list-group-item">Office #: ${member.officeNumber}</li>
-                        <li id='manager-email' class="list-group-item">Email: <a href="mailto: samuel.sweigart@gmail.com" target='_blank'>${member.getEmail()}</a></li>
+                        <li id='manager-id' class="list-group-item bg-light">Employee Id: ${member.getId()}</li>
+                        <li id='manager-office' class="list-group-item bg-light">Office #: ${member.officeNumber}</li>
+                        <li id='manager-email' class="list-group-item bg-light">Email: <a href="mailto: samuel.sweigart@gmail.com" target='_blank'  class="text-decoration-none">${member.getEmail()}</a></li>
                     </ul>
                 </div>
             </div>\n`;
 };
 
 const engineerHTML = (member) => {
-    return `<div class="col-sm-4 card">
+    return `<div class="col-sm-3 card rounded m-4 shadow bg-light">
                 <div class="card-body">
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
@@ -58,16 +58,16 @@ const engineerHTML = (member) => {
                         <h4 id='engineer-name' class="card-title text-center ">${member.getName()}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li id='engineer-id' class="list-group-item">Employee Id: ${member.getId()} </li>
-                        <li id='engineer-github' class="list-group-item">GitHub: <a href='${member.getGitHub()}' target='_blank'>${member.github}</a></li>
-                        <li id='engineer-email' class="list-group-item">Email: <a href="mailto: ${member.getEmail()}" target='_blank'>${member.getEmail()}</a></li>
+                        <li id='engineer-id' class="list-group-item bg-light">Employee Id: ${member.getId()} </li>
+                        <li id='engineer-github' class="list-group-item bg-light">GitHub: <a href='${member.getGitHub()}' target='_blank' class="text-decoration-none">${member.github}</a></li>
+                        <li id='engineer-email' class="list-group-item bg-light">Email: <a href="mailto: ${member.getEmail()}" target='_blank' class="text-decoration-none">${member.getEmail()}</a></li>
                     </ul>
                 </div>
             </div>`;
 };
 
 const internHTML = (member) => {
-    return `<div class="col-sm-4 card">
+    return `<div class="col-sm-3 card m-4 shadow bg-light">
                 <div class="card-body">
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
@@ -78,9 +78,9 @@ const internHTML = (member) => {
                         <h4 id='intern-name' class="card-title text-center ">${member.getName()}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li id='intern-id' class="list-group-item">Employee Id: ${member.getId()}</li>
-                        <li id='intern-school' class="list-group-item">School: ${member.getSchool()}</li>
-                        <li id='intern-email' class="list-group-item">Email: <a href="mailto: ${member.getEmail()} target='_blank'">${member.getEmail()}</a></li>
+                        <li id='intern-id' class="list-group-item bg-light">Employee Id: ${member.getId()}</li>
+                        <li id='intern-school' class="list-group-item bg-light">School: ${member.getSchool()}</li>
+                        <li id='intern-email' class="list-group-item bg-light">Email: <a href="mailto: ${member.getEmail()} target='_blank' class="text-decoration-none">${member.getEmail()}</a></li>
                     </ul>
                 </div>
             </div>`;
