@@ -29,6 +29,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)](https://opensource.org/licenses/MIT)
 ## __ScreenShot__
 ![Screenshot of Application](./assets/images/desktop-view-team-profile-generator-ss.png)
+![Screenshot of Test Coverage](./assets/images/test-coverage-ss.png)
 ## __Contributors__
 Sam Sweigart
 ## __Questions__
