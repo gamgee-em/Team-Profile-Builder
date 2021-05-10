@@ -19,7 +19,9 @@ node.js / npm / npm inquirer / npm jest
 ## __Installation__
     npm i
 ## __Usage__
-Open the CL / clone directory to local client / cd into the cirectory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application
+Open the CL / clone directory to local client / cd into the cirectory where index.js is located / run the following command 'npm i' to install dependencies followed by 'node index.js' to launch application.
+
+    node index.js
 ## __License__
 __Copyright 2021 Sam Sweigart__
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
