@@ -1,25 +1,32 @@
-//import employee from 'employee';
-const { Employee, employee }= require('../scripts/lib/Employee');
+const Employee  = require('../lib/employee');
 
-test('Employee class has a constructor', () => {
-    expect(Employee).hasOwnProperty(constructor)
-})
+describe('Tests employee.js file', () => {
+    test('Employee should have a constructor property', () => {
+        expect(Employee).hasOwnProperty(constructor);
+    });
 
-test('Employee Constructor has role/name/email key', () => {
-    expect(Employee.constructor).hasOwnProperty(constructor.role);
-    expect(Employee.constructor).hasOwnProperty(constructor.name);
-    expect(Employee.constructor).hasOwnProperty(constructor.email);
+    test('Employee Constructor has name/id/email property', () => {
+        expect(Employee).hasOwnProperty(constructor.name);
+        expect(Employee).hasOwnProperty(constructor.id);
+        expect(Employee).hasOwnProperty(constructor.email);
+    });
 
-})
+    test('Employee is an object', () => {
+        const testEmployee = {};
+        expect(typeof(testEmployee)).toBe('object');
+    })
 
-test('Employee Constructor has role key', () => {
-    expect(Employee.constructor).hasOwnProperty(constructor.role)
-})
+    test('Employee is an constructor function', () => {
+        expect(typeof(Employee)).toEqual('function');
+    });
 
-test('creates an OBJECT', () => {
-    expect(employee()).toEqual({})
-});
+    test('getRole() method returns a string', () => {
+        const testEmployee = new Employee();
+        expect(testEmployee.getRole()).toEqual('Employee');
+    });
 
-test('func not an array', () => {
-    expect(employee()).not.toBe([])
+    /* test('getEmail() method returns a string', () => {
+        const testEmail = 'sam@email.com';
+        expect(Employee.getEmail('sam@email.com')).toEqual(testEmail);
+    }); */
 });
