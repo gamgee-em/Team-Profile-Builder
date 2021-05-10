@@ -1,6 +1,6 @@
 # __Readme File Generator__
 ## __Description__
-CL Application that assists the the team manager in creating a professional profiles file for their team members.
+CL Application that assists the the team manager in creating a professional profiles for their team members.
 ## __Table of Contents__
 * [Dependencies](#dependencies)
 * [Installation](#installation)
