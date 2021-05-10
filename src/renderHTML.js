@@ -32,7 +32,7 @@ const managerHTML = (member) => {
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
                         <h3 id='manager' class="text-center">Manager</h3>
-                        <img class="" src="../assets/images/manager-icon.png" alt="Manager icon representing type of team memeber">
+                        <img src="../assets/images/manager-icon.png" alt="Manager icon representing type of team member">
                     </div>
                     <div class="card-body">
                         <h4 id='manager-name' class="card-title text-center ">${member.getName()}</h5>
@@ -52,7 +52,7 @@ const engineerHTML = (member) => {
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
                         <h3 id='engineer' class="text-center">Engineer</h3>
-                        <img class="" src="../assets/images/engineer-icon.png" alt="Engineer icon representing type of team member">
+                        <img src="../assets/images/engineer-icon.png" alt="Engineer icon representing type of team member">
                     </div>
                     <div class="card-body">
                         <h4 id='engineer-name' class="card-title text-center ">${member.getName()}</h5>
@@ -72,7 +72,7 @@ const internHTML = (member) => {
                     <div class="text-center">
                         <!-- EMPLOYEE CARDS -->
                         <h3 id='intern' class="text-center">Intern</h3>
-                        <img class="" src="../assets/images/intern-icon.png" alt="Itner icon representing type of team member">
+                        <img src="../assets/images/intern-icon.png" alt="Itern icon representing type of team member">
                     </div>
                     <div class="card-body">
                         <h4 id='intern-name' class="card-title text-center ">${member.getName()}</h5>
