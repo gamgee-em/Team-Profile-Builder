@@ -1,4 +1,4 @@
-# __Readme File Generator__
+# Team Profile Generator__
 ## __Description__
 CL Application that assists the the team manager in creating a professional profiles for their team members.
 ## __Table of Contents__
